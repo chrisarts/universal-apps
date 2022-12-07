@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "noEmit": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "outDir": "./out-tsc",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}

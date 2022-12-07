@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "next/babel",
+    [
+      "babel-preset-expo",
+      {
+        "jsxRuntime": "automatic",
+        "jsxImportSource": "react",
+        "lazyImports": true
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["@babel/plugin-proposal-private-methods", { "loose": true }],
+    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+    ["nativewind/babel"]
+    // "react-native-reanimated/plugin"
+  ]
+}
