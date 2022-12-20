@@ -6,15 +6,9 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "scripts": {
-    "lint": "TIMING=1 eslint \"**/*.ts*\""
-  },
-  "devDependencies": {
-    "@types/react": "~18.0.14",
-    "@types/react-dom": "^18.0.7",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "react": "^18.0.0",
-    "tsconfig": "*",
-    "typescript": "^4.5.2"
+    "clean": "rm -rf dist .expo .turbo .next node_modules",
+    "lint": "eslint \"./**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./**/*.{ts,tsx}\"",
+    "lint:report": "eslint --output-file ../../lint-results/app.json --format json --fix \"./**/*.{ts,tsx}\""
   }
 }
