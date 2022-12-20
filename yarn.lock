@@ -8956,7 +8956,7 @@ __metadata:
     next-transpile-modules: ^10.0.0
     postcss: ^8.4.19
     raf: ^3.4.1
-    tailwindcss: ^3.0.24
+    tailwindcss: ^3.2.4
   languageName: unknown
   linkType: soft
 
@@ -11503,7 +11503,7 @@ prettier@latest:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.24":
+"tailwindcss@npm:^3.2.4":
   version: 3.2.4
   resolution: "tailwindcss@npm:3.2.4"
   dependencies:

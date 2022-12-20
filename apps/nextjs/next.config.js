@@ -1,4 +1,3 @@
-/* eslint-disable turbo/no-undeclared-env-vars */
 const withImages = require('next-images');
 const withFonts = require('next-fonts');
 const withPlugins = require('next-compose-plugins');
@@ -25,9 +24,8 @@ const nextConfig = {
   },
   experimental: {
     forceSwcTransforms: true,
-    swcPlugins: [[require.resolve('./plugins/swc_plugin_reanimated.wasm')]],
   },
-  webpack(config, options) {
+  webpack(config) {
     if (!config.resolve) {
       config.resolve = {};
     }
