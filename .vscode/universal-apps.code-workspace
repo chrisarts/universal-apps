@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "✨ @chrisarts/monorepo",
+      "path": ".."
+    },
+    {
+      "name": "🚀 @chrisarts/expo",
+      "path": "../apps/expo"
+    },
+    {
+      "name": "🚀 @chrisarts/nextjs",
+      "path": "../apps/nextjs"
+    },
+    {
+      "name": "📦 @chrisarts/universal",
+      "path": "../packages/universal"
+    }
+  ],
+  "settings": {}
+}

@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@universal/ui": "*",
+    "@chrisarts/universal": "*",
     "next": "13.0.6",
     "raf": "^3.4.1"
   },

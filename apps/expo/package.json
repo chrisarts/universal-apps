@@ -10,7 +10,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@universal/ui": "*",
+    "@chrisarts/universal": "*",
     "expo": "^47.0.8",
     "expo-status-bar": "~1.4.2",
     "nativewind": "^2.0.11",
