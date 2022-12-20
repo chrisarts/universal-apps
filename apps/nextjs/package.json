@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@chrisarts/universal": "*",
+    "@next/font": "13.0.7",
     "next": "13.0.6",
     "raf": "^3.4.1"
   },

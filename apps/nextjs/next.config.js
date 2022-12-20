@@ -4,7 +4,7 @@ const withPlugins = require('next-compose-plugins');
 const { DefinePlugin } = require('webpack');
 
 const withTM = require('next-transpile-modules')([
-  '@universal/ui',
+  '@chrisarts/universal',
   'react-native-web',
   'nativewind',
 ]);
@@ -12,7 +12,6 @@ const withTM = require('next-transpile-modules')([
 /** @type {import('next').NextConfig} **/
 const nextConfig = {
   reactStrictMode: false,
-  webpack5: true,
   eslint: {
     ignoreDuringBuilds: false,
   },

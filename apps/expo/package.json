@@ -13,7 +13,7 @@
     "@chrisarts/universal": "*",
     "expo": "^47.0.8",
     "expo-status-bar": "~1.4.2",
-    "nativewind": "^2.0.11",
+    "nativewind": "next",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.70.5",

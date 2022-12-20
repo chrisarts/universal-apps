@@ -1,6 +1,6 @@
 import { TextInput as NativeInput } from 'react-native';
-import { FieldSet } from '@universal/ui/fieldset';
-import { styled } from 'nativewind';
+import { FieldSet } from '@chrisarts/universal/fieldset';
+import { styled } from '@chrisarts/universal/tailwind';
 
 const StyledInput = styled(NativeInput);
 

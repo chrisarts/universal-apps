@@ -1,13 +1,13 @@
-import { Button } from "@universal/ui/common/Button";
-import { View } from "@universal/ui/view";
-import { TextInput } from "@universal/ui/text-input";
+import { Button } from '@chrisarts/universal/button';
+import { TextInput } from '@chrisarts/universal/text-input';
+import { View } from '@chrisarts/universal/view';
 
 export default function Web() {
   return (
-    <View className="flex-1 justify-center items-center">
+    <View className='flex-1 items-center justify-center'>
       <h1>Web</h1>
       <TextInput />
-      <Button className="bg-green-400">
+      <Button className='bg-gray-800'>
         <span>sadasdasd</span>
       </Button>
     </View>

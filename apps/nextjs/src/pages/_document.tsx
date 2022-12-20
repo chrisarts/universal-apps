@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { AppRegistry } from 'react-native';
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 
 const reactNativeWebStyles = `
 html, body, #__next {
@@ -45,10 +45,13 @@ export default class MyDocument extends Document {
     return (
       <Html style={{ height: '100%', width: '100%' }}>
         <Head>
-        <meta charSet="UTF-8" />
+          <meta charSet='UTF-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         </Head>
-        <body style={{ height: '100%', width: '100%', overflow: 'hidden' }} className='bg-gray-500'>
+        <body
+          style={{ height: '100%', width: '100%', overflow: 'hidden' }}
+          className='bg-gray-500'
+        >
           <Main />
           <NextScript />
         </body>

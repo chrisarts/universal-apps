@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react';
-import { Text } from '@universal/ui/text';
-import { View } from '@universal/ui/view';
+import { Text } from '@chrisarts/universal/text';
+import { View } from '@chrisarts/universal/view';
 
 interface IFieldSetProps extends PropsWithChildren {
   focused: boolean;
