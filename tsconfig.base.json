@@ -20,7 +20,10 @@
     "noUncheckedIndexedAccess": true,
     "checkJs": false,
     "baseUrl": ".",
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@chrisarts/universal/*": ["./packages/universal/*"]
+    }
   },
   "exclude": ["node_modules", "tmp", "**/dist/**", "**/.expo/**/*", "dist", "**/.next/**/*"]
 }

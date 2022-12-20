@@ -1,0 +1,14 @@
+{
+  "name": "@chrisarts/universal",
+  "version": "0.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "scripts": {
+    "clean": "rm -rf dist .expo .turbo .next node_modules",
+    "lint": "eslint \"./**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./**/*.{ts,tsx}\"",
+    "lint:report": "eslint --output-file ../../lint-results/app.json --format json --fix \"./**/*.{ts,tsx}\""
+  }
+}
