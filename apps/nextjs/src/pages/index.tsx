@@ -1,6 +1,6 @@
-import { Button } from '@chrisarts/universal/button';
-import { TextInput } from '@chrisarts/universal/text-input';
-import { View } from '@chrisarts/universal/view';
+import { Button } from '@universal/ui/button';
+import { TextInput } from '@universal/ui/text-input';
+import { View } from '@universal/ui/view';
 
 export default function Web() {
   return (

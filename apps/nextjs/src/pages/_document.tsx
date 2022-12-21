@@ -48,10 +48,7 @@ export default class MyDocument extends Document {
           <meta charSet='UTF-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         </Head>
-        <body
-          style={{ height: '100%', width: '100%', overflow: 'hidden' }}
-          className='bg-gray-500'
-        >
+        <body style={{ height: '100%', width: '100%', overflow: 'hidden' }}>
           <Main />
           <NextScript />
         </body>

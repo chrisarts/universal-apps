@@ -22,7 +22,9 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@chrisarts/universal/*": ["./packages/universal/*"]
+      "@universal/ui/*": ["./packages/ui/*"],
+      "@universal/app/*": ["./packages/app/*"],
+      "@universal/server/*": ["./packages/server/*"],
     }
   },
   "exclude": ["node_modules", "tmp", "**/dist/**", "**/.expo/**/*", "dist", "**/.next/**/*"]

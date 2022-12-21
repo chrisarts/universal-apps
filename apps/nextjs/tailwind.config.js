@@ -1,5 +1,5 @@
-const { theme } = require('@chrisarts/universal/tailwind/theme');
-const themeColors = require('@chrisarts/universal/tailwind/colors');
+const { theme } = require('@universal/ui/tailwind/theme');
+const themeColors = require('@universal/ui/tailwind/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 const nativewind = require('nativewind/tailwind');
 

@@ -4,8 +4,11 @@ const withPlugins = require('next-compose-plugins');
 const { DefinePlugin } = require('webpack');
 
 const withTM = require('next-transpile-modules')([
-  '@chrisarts/universal',
+  '@universal/ui',
+  '@universal/server',
+  '@universal/app',
   'react-native-web',
+  'react-native-svg',
   'nativewind',
 ]);
 

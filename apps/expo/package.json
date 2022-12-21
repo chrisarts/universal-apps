@@ -10,14 +10,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-menu/menu": "^0.7.2",
     "@universal/ui": "*",
     "expo": "^47.0.8",
+    "expo-navigation-bar": "^2.0.1",
     "expo-status-bar": "~1.4.2",
+    "expo-system-ui": "2.0.1",
+    "moti": "^0.21.0",
     "nativewind": "next",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.70.5",
-    "react-native-web": "0.18.9"
+    "react-native-ios-context-menu": "^1.15.1",
+    "react-native-mmkv": "^2.5.1",
+    "react-native-reanimated": "~2.12.0",
+    "react-native-svg": "^13.6.0",
+    "react-native-web": "0.18.9",
+    "zeego": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
