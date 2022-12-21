@@ -1589,6 +1589,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@chrisarts/monorepo@workspace:."
   dependencies:
+    "@prisma/client": ^4.8.0
     "@trivago/prettier-plugin-sort-imports": ^3.3.0
     "@types/react": 18.0.23
     "@types/react-dom": 18.0.9
@@ -1606,17 +1607,11 @@ __metadata:
     lint-staged: ^13.0.3
     prettier: latest
     prettier-plugin-tailwindcss: 0.1.10
-    prisma: ^4.7.1
+    prisma: ^4.8.0
     react: 18.0.0
     react-dom: 18.0.0
     turbo: latest
     typescript: ^4.8.4
-  languageName: unknown
-  linkType: soft
-
-"@chrisarts/universal@*, @chrisarts/universal@workspace:packages/universal":
-  version: 0.0.0-use.local
-  resolution: "@chrisarts/universal@workspace:packages/universal"
   languageName: unknown
   linkType: soft
 
@@ -2384,10 +2379,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/engines@npm:4.7.1":
-  version: 4.7.1
-  resolution: "@prisma/engines@npm:4.7.1"
-  checksum: 1660f1d5a6188a9cb9aa5186111910f37b1bc02f09be10336a41e0ec61a18a4193e0ff424077dafb1bf1392a435fc89cec47526a58784a7bdc6c8278adf147a4
+"@prisma/client@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@prisma/client@npm:4.8.0"
+  dependencies:
+    "@prisma/engines-version": 4.8.0-61.d6e67a83f971b175a593ccc12e15c4a757f93ffe
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: c0256721bd4e07fb1fdf4d0857489379769af1eaac0aec79387e32092e63e1246a95fef634f6c07bf1bdddc7c11f3e073c78e5c92b9a708f559773a3f656f94a
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:4.8.0-61.d6e67a83f971b175a593ccc12e15c4a757f93ffe":
+  version: 4.8.0-61.d6e67a83f971b175a593ccc12e15c4a757f93ffe
+  resolution: "@prisma/engines-version@npm:4.8.0-61.d6e67a83f971b175a593ccc12e15c4a757f93ffe"
+  checksum: 839c9ecaad0b3b64bf0a641c3cb4103237b8e0e1f23c5ba47fdabaab853590f765e5323fb664588f954be56cd6c1a19c1a01617cd826c48a5e9221f3e82b2a28
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:4.8.0":
+  version: 4.8.0
+  resolution: "@prisma/engines@npm:4.8.0"
+  checksum: 5c1198905d7bf850c02cd59f244055003fc2a03ce99e715a0a872f568fb024aa4b347804829c8630964ff41b64cf8fa3e08c8cd2a444ad29c215c4b1dd9701b0
   languageName: node
   linkType: hard
 
@@ -2690,6 +2706,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:4.20.4":
+  version: 4.20.4
+  resolution: "@tanstack/query-core@npm:4.20.4"
+  checksum: bdb652296e4093d8cb042a67b9c035bc0a756e09a3b12aeb070068b07adc1c71174c2e6108f2a8c3322a26cb73ba57f431326aa0b813c81621674b9cc208cd93
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^4.20.4":
+  version: 4.20.4
+  resolution: "@tanstack/react-query@npm:4.20.4"
+  dependencies:
+    "@tanstack/query-core": 4.20.4
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-native: "*"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: ba9e2f175c58bde592c0ad14285f289585474763f8d68072d651fa75263a3a7f75eead5b62aa3140db133b95468498bc58817d07513f6f857be2bd8031b491da
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -2712,6 +2754,52 @@ __metadata:
   peerDependencies:
     prettier: 2.x
   checksum: ed72f8fbf7ae2f6b48dfe3b8b4cde35df063b594eae4a63612ec54720f00f0f65b47cceccee89fda665f32a266808c7e4ae2c7fa79ebce364bd4d08fa41f10b3
+  languageName: node
+  linkType: hard
+
+"@trpc/client@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@trpc/client@npm:10.6.0"
+  peerDependencies:
+    "@trpc/server": 10.6.0
+  checksum: ee5f08ee132f12a7571aaa27e9aeeca154eb09b027ba104ea2e7bb90fab7b65d732e06f07cd05e242187e4a61d2ee59e425bded75801f042a14bef6158f61848
+  languageName: node
+  linkType: hard
+
+"@trpc/next@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@trpc/next@npm:10.6.0"
+  dependencies:
+    react-ssr-prepass: ^1.5.0
+  peerDependencies:
+    "@tanstack/react-query": ^4.3.8
+    "@trpc/client": 10.6.0
+    "@trpc/react-query": ^10.0.0-proxy-beta.21
+    "@trpc/server": 10.6.0
+    next: "*"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 8b05efdd09f80cf239b19d1d2018139c1f8363b393cb961231e8c0a2e64e1ed7ca5fca5efdfcad22a2d4b3ab5fc34a24bf638befbcc22df09a0b2d450b8203d0
+  languageName: node
+  linkType: hard
+
+"@trpc/react-query@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@trpc/react-query@npm:10.6.0"
+  peerDependencies:
+    "@tanstack/react-query": ^4.3.8
+    "@trpc/client": 10.6.0
+    "@trpc/server": 10.6.0
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 921113b50e046e87c2b607e76ccbc870d6b5996aa1b8fcd0bce04fd9ee2dec3e872b153f524eb40763f636bd753e930f324e0640deff698dc56b354c378708e8
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@trpc/server@npm:10.6.0"
+  checksum: 61f3c6f60bb54f32e975b5fbdf2b8c9bd0ba7e74149a911258640631c90e10d8d43155021c7b3762eaef99dad7097d0aa521b0f4a5ca44edbb89c5aeea8e136f
   languageName: node
   linkType: hard
 
@@ -3023,6 +3111,24 @@ __metadata:
   checksum: 2191c079154bdfd1b85b8cd24baa6c0f55c73527c6c8460789483555b4eb5c72e3dc6d1aa4bbac2cf7b86b474588b45682a8deb151e9d903cf72c8f336141f1f
   languageName: node
   linkType: hard
+
+"@universal/app@workspace:packages/app":
+  version: 0.0.0-use.local
+  resolution: "@universal/app@workspace:packages/app"
+  languageName: unknown
+  linkType: soft
+
+"@universal/server@workspace:packages/server":
+  version: 0.0.0-use.local
+  resolution: "@universal/server@workspace:packages/server"
+  languageName: unknown
+  linkType: soft
+
+"@universal/ui@*, @universal/ui@workspace:packages/universal":
+  version: 0.0.0-use.local
+  resolution: "@universal/ui@workspace:packages/universal"
+  languageName: unknown
+  linkType: soft
 
 "@urql/core@npm:2.3.6":
   version: 2.3.6
@@ -5702,7 +5808,7 @@ __metadata:
   resolution: "expo-app@workspace:apps/expo"
   dependencies:
     "@babel/core": ^7.12.9
-    "@chrisarts/universal": "*"
+    "@universal/ui": "*"
     expo: ^47.0.8
     expo-status-bar: ~1.4.2
     nativewind: next
@@ -8987,9 +9093,14 @@ __metadata:
     "@babel/plugin-proposal-class-properties": ~7.18.6
     "@babel/plugin-proposal-private-methods": ~7.18.6
     "@babel/plugin-proposal-private-property-in-object": ~7.20.5
-    "@chrisarts/universal": "*"
     "@next/font": 13.0.7
+    "@tanstack/react-query": ^4.20.4
+    "@trpc/client": ^10.6.0
+    "@trpc/next": ^10.6.0
+    "@trpc/react-query": ^10.6.0
+    "@trpc/server": ^10.6.0
     "@types/node": ^17.0.12
+    "@universal/ui": "*"
     autoprefixer: ^10.4.13
     eslint: 7.32.0
     eslint-config-next: 13.0.6
@@ -9001,6 +9112,7 @@ __metadata:
     postcss: ^8.4.19
     raf: ^3.4.1
     tailwindcss: ^3.2.4
+    zod: ^3.20.2
   languageName: unknown
   linkType: soft
 
@@ -9891,15 +10003,15 @@ prettier@latest:
   languageName: node
   linkType: hard
 
-"prisma@npm:^4.7.1":
-  version: 4.7.1
-  resolution: "prisma@npm:4.7.1"
+"prisma@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "prisma@npm:4.8.0"
   dependencies:
-    "@prisma/engines": 4.7.1
+    "@prisma/engines": 4.8.0
   bin:
     prisma: build/index.js
     prisma2: build/index.js
-  checksum: eb7046a5928f33e484bb2a100f49b613a37bdd83d72aa7e87a4edb38a235b7c44bb9c89bc9116af60950554da06d6ef7c581dd0c637ba2798810485d04da29d4
+  checksum: 22ebaa32c51fb2938626d742d9ae68be5ad49a44dad2046bfe40439a64d06e8f84d4915f66100554d7840c3c5228c6b5c4216d9f5a698d5dd11a46ab528654cf
   languageName: node
   linkType: hard
 
@@ -10209,6 +10321,15 @@ prettier@latest:
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
   checksum: 6052c7e3e9627485120ebd8257f128aad8f56386fe8d42374b7743eac1be457c33506d153c7886b4e32923c0c352d402ab805ef9ca02dbcd8393b2bdeb6e5af8
+  languageName: node
+  linkType: hard
+
+"react-ssr-prepass@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "react-ssr-prepass@npm:1.5.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: efe89b9f8b2053474613f56dfdbeb41d8ee2e572bf819a39377d95d3e4a9acf8a4a16e28d8d8034cb9ac2b316d11dc9e62217743e4322046d08175eb3b4fed3e
   languageName: node
   linkType: hard
 
@@ -12234,7 +12355,7 @@ turbo@latest:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.1.0":
+"use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.1.0, use-sync-external-store@npm:^1.2.0":
   version: 1.2.0
   resolution: "use-sync-external-store@npm:1.2.0"
   peerDependencies:
@@ -12615,5 +12736,12 @@ turbo@latest:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.20.2":
+  version: 3.20.2
+  resolution: "zod@npm:3.20.2"
+  checksum: 04172f7e9350372684ccd298d4716908edc9113751295b6c4e1b3ea84e2af8997e504b33ba36f4741417bb2a5dc90bfd40501f6b0e7389df10e42a63d6d8366c
   languageName: node
   linkType: hard

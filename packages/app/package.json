@@ -1,0 +1,5 @@
+{
+  "name": "@universal/app",
+  "main": "index.ts",
+  "packageManager": "yarn@3.3.1"
+}

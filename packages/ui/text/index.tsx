@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 import { Text as NativeText } from 'react-native';
-import { styled } from '@chrisarts/universal/tailwind';
+import { styled } from '@universal/ui/tailwind';
 
 const variants = {
   default: '',

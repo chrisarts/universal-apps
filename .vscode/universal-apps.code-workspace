@@ -1,20 +1,28 @@
 {
   "folders": [
     {
-      "name": "✨ @chrisarts/monorepo",
+      "name": "✨ @universal/monorepo",
       "path": ".."
     },
     {
-      "name": "🚀 @chrisarts/expo",
+      "name": "🚀 @universal/expo",
       "path": "../apps/expo"
     },
     {
-      "name": "🚀 @chrisarts/nextjs",
+      "name": "🚀 @universal/nextjs",
       "path": "../apps/nextjs"
     },
     {
-      "name": "📦 @chrisarts/universal",
-      "path": "../packages/universal"
+      "name": "📦 @universal/app",
+      "path": "../packages/app"
+    },
+    {
+      "name": "📦 @universal/ui",
+      "path": "../packages/ui"
+    },
+    {
+      "name": "📦 @universal/server",
+      "path": "../packages/server"
     }
   ],
   "settings": {}
